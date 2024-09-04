@@ -13,11 +13,7 @@
          - name: Set up Python
            uses: actions/setup-python@v2
            with:
-             python-version: '3.8'  # Specify the Python version you want to use
-
-         - name: Install dependencies
-           run: |
-             pip install zipfile
+             python-version: '3.8'  # Specify the Python version you want to 
 
          - name: Run the script
            run: |
