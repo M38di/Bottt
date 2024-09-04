@@ -1,0 +1,25 @@
+     name: Python CI
+
+     on: 
+       workflow_dispatch:
+     jobs:
+       build:
+         runs-on: ubuntu-latest
+
+         steps:
+         - name: Check out the code
+           uses: actions/checkout@v2
+
+         - name: Set up Python
+           uses: actions/setup-python@v2
+           with:
+             python-version: '3.8'  # Specify the Python version you want to use
+
+         - name: Install dependencies
+           run: |
+             pip install zipfile
+
+         - name: Run the script
+           run: |
+             python Py.py  # Change this to your script name
+     
