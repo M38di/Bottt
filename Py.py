@@ -27,6 +27,6 @@ def extract_zip(zip_file_path, extract_to='.'):
 
 # Example usage
 if __name__ == "__main__":
-    zip_file = ''  # Replace with your zip file
-    output_dir = 'output_directory'  # Replace with your desired extraction directory
+    zip_file = 'iconscout_downloader-main.zip'  # Replace with your zip file
+    output_dir = '/'  # Replace with your desired extraction directory
     extract_zip(zip_file, output_dir)
